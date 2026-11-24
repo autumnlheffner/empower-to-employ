@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Experiences | Empower to Employ | Polk State College</title>
+    <link rel="icon" type="image/png" href="images/ete_favi_logo.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body id="top">
+
+    <!-- header -->
+    <header class="site-header">
+        <nav aria-label="Main navigation">
+            <!-- psc + ete logos -->
+            <div class="brand-logos">
+                <a href="https://www.polk.edu/"><img src="images/psc_logo.png" alt="Polk State College Logo" class="polk-logo"></a>
+                <span class="logo-divider"></span>
+                <a href="index.html"><img src="images/ete_favi_logo.png" alt="Empower to Employ Shield" class="ete-shield"></a>
+                <a href="index.html"><img src="images/ete_logo.png" alt="Empower to Employ Logo" class="ete-logo"></a>
+            </div>
+
+            <!-- nav links -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About ETE</a></li>
+                <li><a href="student_experiences.html" class="active" aria-current="page">Student Experiences</a></li>
+                <li><a href="future_careers.html">Future &amp; Careers</a></li>
+            </ul>
+
+
+            <!-- topic menu: choose a link to jump to its section -->
+            <details class="topic-search">
+                <summary>⌕ &nbsp; Find a topic</summary>
+                <div class="topic-search-links">
+                    <a href="student_experiences.html#internships">Internships</a>
+                    <a href="student_experiences.html#projects">Activities &amp; Projects</a>
+                    <a href="future_careers.html#certifications">Certifications</a>
+                    <a href="future_careers.html#career-pathways">Career Pathways</a>
+                    <a href="future_careers.html#career-skills">Career Skills</a>
+                    <a href="future_careers.html#work-experiences">Work Experiences</a>
+                    <a href="about.html#staff">Meet the ETE Team</a>
+                    <a href="about.html#faq">Frequently Asked Questions (FAQ)</a>
+                    <a href="index.html#events">News &amp; Events</a>
+                </div>
+            </details>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main class="interior-main">
+
+        <!-- hero -->
+        <section class="hero interior-hero">
+            <div class="interior-hero-content">
+                <p class="section-label">POLK STATE COLLEGE</p>
+                <h1>Student Experiences</h1>
+                <p class="hero-tagline">Learning Beyond the Classroom.</p>
+                <p class="hero-description">See how ETE students build skills and confidence through internships, workplace visits, campus activities, and hands-on learning.</p>
+            </div>
+
+            <div class="hero-logo">
+                <img src="images/ete_favi_logo.png" alt="Empower to Employ Shield">
+            </div>
+        </section>
+
+        <!-- activities & projects: responsive filterable gallery -->
+        <section class="home-section" id="projects">
+            <div class="section-heading">
+                <h2><img src="images/icons/projects.svg" alt="" class="section-icon">Activities &amp; Projects</h2>
+                <p>Explore creative work and hands-on activities from the Empower to Employ program.</p>
+            </div>
+
+            <!-- javascript filters: each button matches the category on a figure -->
+            <div class="project-filters">
+                <button type="button" class="project-filter active" data-filter="all" aria-pressed="true">All (6)</button>
+                <button type="button" class="project-filter" data-filter="art" aria-pressed="false">Art &amp; Design</button>
+                <button type="button" class="project-filter" data-filter="photo" aria-pressed="false">Photography</button>
+                <button type="button" class="project-filter" data-filter="digital" aria-pressed="false">Digital Media</button>
+                <button type="button" class="project-filter" data-filter="life" aria-pressed="false">Life Skills</button>
+            </div>
+
+            <!-- six-image grid gallery -->
+            <div class="project-gallery">
+                <figure class="project-card" data-category="art">
+                    <a href="#project-photo-1"><img src="images/projects/project_02.jpg" alt="Artwork created by Kristasia Causey" loading="lazy"></a>
+                    <figcaption><strong>Student Artwork</strong><span>Art &amp; Design</span><small>Created by Kristasia Causey</small></figcaption>
+                </figure>
+                <figure class="project-card" data-category="photo">
+                    <a href="#project-photo-2"><img src="images/projects/project_03.jpg" alt="Portrait photograph featured in the ETE student projects" loading="lazy"></a>
+                    <figcaption><strong>Portrait Photography</strong><span>Photography</span><small>Photo by Polk State College</small></figcaption>
+                </figure>
+                <figure class="project-card" data-category="art">
+                    <a href="#project-photo-3"><img src="images/projects/project_04.jpg" alt="Ceramic face vase created by Kevin Pagan" loading="lazy"></a>
+                    <figcaption><strong>Ceramics Project</strong><span>Art &amp; Design</span><small>Created by Kevin Pagan · Photo by Autumn Heffner</small></figcaption>
+                </figure>
+                <figure class="project-card" data-category="digital">
+                    <a href="#project-photo-4"><img src="images/projects/project_01.jpg" alt="Fictitious horror film poster created by Autumn Heffner" loading="lazy"></a>
+                    <figcaption><strong>Film Poster</strong><span>Digital Media</span><small>Created by Autumn Heffner</small></figcaption>
+                </figure>
+                <figure class="project-card" data-category="life">
+                    <a href="#project-photo-5"><img src="images/workreadiness%20independantliving/ind_living_02.jpg" alt="ETE student practicing folding clothes" loading="lazy"></a>
+                    <figcaption><strong>Laundry Skills</strong><span>Life Skills</span><small>Photo by Autumn Heffner</small></figcaption>
+                </figure>
+                <figure class="project-card" data-category="life">
+                    <a href="#project-photo-6"><img src="images/workreadiness%20independantliving/ind_living_01.jpg" alt="ETE student folding clothes" loading="lazy"></a>
+                    <figcaption><strong>Folding Clothes</strong><span>Life Skills</span><small>Photo by Autumn Heffner</small></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- full-size photos: works with html and css, even without javascript -->
+        <div id="project-photo-1" class="photo-overlay">
+            <a href="#projects" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#project-photo-6" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/projects/project_02.jpg" alt="Artwork by Kristasia Causey">
+                <a href="#project-photo-2" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Student Artwork — Created by Kristasia Causey</p>
+            </div>
+        </div>
+        <div id="project-photo-2" class="photo-overlay">
+            <a href="#projects" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#project-photo-1" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/projects/project_03.jpg" alt="Portrait photograph featured in ETE projects">
+                <a href="#project-photo-3" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Portrait Photography<span class="photo-credit">Photo by Polk State College</span></p>
+            </div>
+        </div>
+        <div id="project-photo-3" class="photo-overlay">
+            <a href="#projects" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#project-photo-2" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/projects/project_04.jpg" alt="Ceramics face vase by Kevin Pagan">
+                <a href="#project-photo-4" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Ceramics Project — Created by Kevin Pagan<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+        <div id="project-photo-4" class="photo-overlay">
+            <a href="#projects" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#project-photo-3" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/projects/project_01.jpg" alt="Fictitious horror film poster starring Ms. Jenkins and Mr. Pritchard">
+                <a href="#project-photo-5" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Fictitious Horror Film Poster — Created by Autumn Heffner<span class="photo-credit">Image credits: Coach Pritchard, Mrs. Jenkins, Digital Media Lab</span></p>
+            </div>
+        </div>
+        <div id="project-photo-5" class="photo-overlay">
+            <a href="#projects" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#project-photo-4" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/workreadiness%20independantliving/ind_living_02.jpg" alt="Student practicing folding clothes">
+                <a href="#project-photo-6" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Laundry Skills — Life Skills<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+        <div id="project-photo-6" class="photo-overlay">
+            <a href="#projects" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#project-photo-5" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/workreadiness%20independantliving/ind_living_01.jpg" alt="Student folding clothes">
+                <a href="#project-photo-1" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Folding Clothes — Life Skills<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- internships -->
+        <section class="home-section" id="internships">
+            <div class="section-heading">
+                <h2><img src="images/icons/internships.svg" alt="" class="section-icon">Internships</h2>
+                <p>Internships give ETE students opportunities to apply classroom lessons, take on responsibilities, and gain confidence in real workplaces.</p>
+            </div>
+
+            <div class="experience-grid">
+                <!-- the twisted prop -->
+                <article class="experience-card">
+                    <div class="experience-content">
+                        <h3>The Twisted Prop</h3>
+                        <p>At The Twisted Prop, students learn through everyday workplace responsibilities. Their experiences strengthen teamwork, communication, and customer service skills.</p>
+                        <div class="photo-preview">
+                            <img src="images/internships/prop_03.jpg" alt="The Twisted Prop" loading="lazy">
+                            <img src="images/internships/prop_11.jpg" alt="The Twisted Prop" loading="lazy">
+                            <img src="images/internships/prop_07.jpg" alt="The Twisted Prop" loading="lazy">
+                            <!-- all photos here by autumn heffner-->
+                        </div>
+                        <a href="#twisted-prop-photo-1" class="view-photos">View Photos</a>
+                    </div>
+                </article>
+
+                <!-- flightline cafe -->
+                <article class="experience-card">
+                    <div class="experience-content">
+                        <h3>Flightline Cafe</h3>
+                        <p>At Flightline Cafe, students gain hands-on experience while practicing customer service, communication, and teamwork in a busy work environment.</p>
+                        <div class="photo-preview">
+                            <img src="images/internships/flightline.jpg" alt="Flightline Cafe" loading="lazy">
+                            <img src="images/internships/flightline_01.jpg" alt="Flightline Cafe experience" loading="lazy">
+                            <img src="images/internships/flightline_02.jpg" alt="Flightline Cafe experience" loading="lazy">
+                            <!-- all photos here by autumn heffner-->
+                        </div>
+                        <a href="#flightline-photo-1" class="view-photos">View Photos</a>
+                    </div>
+                </article>
+
+                <!-- robocade -->
+                <article class="experience-card">
+                    <div class="experience-content">
+                        <h3>RoboCade</h3>
+                        <p>At RoboCade, students explore a different work environment and practice completing tasks, working with others, and taking responsibility.</p>
+                        <div class="photo-preview">
+                            <img src="images/internships/robo_01.jpg" alt="RoboCade experience" loading="lazy">
+                            <img src="images/internships/robo_02.jpg" alt="RoboCade experience" loading="lazy">
+                            <img src="images/internships/robo_03.jpg" alt="RoboCade experience" loading="lazy">
+                            <!-- all photos here by autumn heffner-->
+                        </div>
+                        <a href="#robocade-photo-1" class="view-photos">View Photos</a>
+                    </div>
+                </article>
+
+                <!-- food bank -->
+                <article class="experience-card">
+                    <div class="experience-content">
+                        <h3>Food Bank</h3>
+                        <p>At the food bank, students support their community while practicing teamwork, organization, and workplace responsibilities.</p>
+                        <div class="photo-preview">
+                            <img src="images/internships/foodbank_01.jpg" alt="Food bank experience" loading="lazy">
+                            <img src="images/internships/foodbank_02.jpg" alt="Food bank experience" loading="lazy">
+                            <img src="images/internships/foodbank_05.jpg" alt="Food bank experience" loading="lazy">
+                            <!-- all photos here by autumn heffner-->
+                        </div>
+                        <a href="#foodbank-photo-1" class="view-photos">View Photos</a>
+                    </div>
+                </article>
+
+                <!-- louise's kitchen -->
+                <article class="experience-card">
+                    <div class="experience-content">
+                        <h3>Louise's Kitchen</h3>
+                        <p>At Louise’s Kitchen, students gain practical experience with customer service, communication, and teamwork while learning about daily workplace routines.</p>
+                        <div class="photo-preview">
+                            <img src="images/internships/louise_01.jpg" alt="Louise's Kitchen internship photo one" loading="lazy">
+                            <img src="images/internships/louise_02.jpg" alt="Louise's Kitchen internship photo two" loading="lazy">
+                            <!-- all photos here by autumn heffner-->
+                        </div>
+                        <a href="#louise-photo-1" class="view-photos">View Photos</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- louise's kitchen photo gallery -->
+        <div id="louise-photo-1" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#louise-photo-2" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/louise_01.jpg" alt="Louise's Kitchen internship photo one">
+                <a href="#louise-photo-2" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Louise's Kitchen Internship<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <div id="louise-photo-2" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#louise-photo-1" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/louise_02.jpg" alt="Louise's Kitchen internship photo two">
+                <a href="#louise-photo-1" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Workplace Experience<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- the twisted prop photo gallery -->
+
+        <!-- photo 1 -->
+        <div id="twisted-prop-photo-1" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-14" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_01.jpg" alt="ETE students at The Twisted Prop">
+                <a href="#twisted-prop-photo-2" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">First Day at The Twisted Prop<span class="photo-credit">Photo by Coach Pritchard</span></p>
+            </div>
+        </div>
+
+        <!-- photo 2 -->
+        <div id="twisted-prop-photo-2" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-1" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_02.jpg" alt="ETE students bussing tables at The Twisted Prop">
+                <a href="#twisted-prop-photo-3" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Students Bussing Tables at The Twisted Prop<span class="photo-credit">Photo by Coach Pritchard</span></p>
+            </div>
+        </div>
+
+        <!-- photo 3 -->
+        <div id="twisted-prop-photo-3" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-2" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_03.jpg" alt="The Twisted Prop experience">
+                <a href="#twisted-prop-photo-4" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 4 -->
+        <div id="twisted-prop-photo-4" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-3" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_04.jpg" alt="The Twisted Prop experience">
+                <a href="#twisted-prop-photo-5" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 5 -->
+        <div id="twisted-prop-photo-5" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-4" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_05.jpg" alt="The Twisted Prop experience">
+                <a href="#twisted-prop-photo-6" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 6 -->
+        <div id="twisted-prop-photo-6" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-5" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_06.jpg" alt="The Twisted Prop experience">
+                <a href="#twisted-prop-photo-7" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 7 -->
+        <div id="twisted-prop-photo-7" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-6" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_07.jpg" alt="The Twisted Prop experience">
+                <a href="#twisted-prop-photo-8" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 8 -->
+        <div id="twisted-prop-photo-8" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-7" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_08.jpg" alt="The Twisted Prop experience">
+                <a href="#twisted-prop-photo-9" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 9 -->
+        <div id="twisted-prop-photo-9" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-8" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_09.jpg" alt="The Twisted Prop experience">
+                <a href="#twisted-prop-photo-10" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 10 -->
+        <div id="twisted-prop-photo-10" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-9" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_10.jpg" alt="The Twisted Prop experience">
+                <a href="#twisted-prop-photo-11" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 11 -->
+        <div id="twisted-prop-photo-11" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-10" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_11.jpg" alt="The Twisted Prop experience">
+                <a href="#twisted-prop-photo-12" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 12 -->
+        <div id="twisted-prop-photo-12" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-11" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_12.jpg" alt="The Twisted Prop experience">
+                <a href="#twisted-prop-photo-13" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 13 -->
+        <div id="twisted-prop-photo-13" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-12" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_13.jpg" alt="Work experience at The Twisted Prop">
+                <a href="#twisted-prop-photo-14" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop — Photo 13<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 14 -->
+        <div id="twisted-prop-photo-14" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#twisted-prop-photo-13" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/prop_14.jpg" alt="Work experience at The Twisted Prop">
+                <a href="#twisted-prop-photo-1" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">The Twisted Prop — Photo 14<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!--*****************************************
+            *                                       *
+                *       this is a headache              *
+            *               send help.              *
+                *                                       *
+            *****************************************-->
+
+        <!-- flightline cafe photo gallery -->
+        <!-- photo 1 -->
+        <div id="flightline-photo-1" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#flightline-photo-4" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/flightline.jpg" alt="Flightline Cafe">
+                <a href="#flightline-photo-2" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Flightline Cafe<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 2 -->
+        <div id="flightline-photo-2" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#flightline-photo-1" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/flightline_01.jpg" alt="Flightline Cafe experience">
+                <a href="#flightline-photo-3" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Flightline Cafe<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 3 -->
+        <div id="flightline-photo-3" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#flightline-photo-2" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/flightline_02.jpg" alt="Flightline Cafe experience">
+                <a href="#flightline-photo-4" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Flightline Cafe<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 4 -->
+        <div id="flightline-photo-4" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#flightline-photo-3" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/flightline_03.jpg" alt="Flightline Cafe experience">
+                <a href="#flightline-photo-1" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Flightline Cafe<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- robocade photo gallery -->
+
+        <!-- photo 1 -->
+        <div id="robocade-photo-1" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#robocade-photo-3" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/robo_01.jpg" alt="RoboCade experience">
+                <a href="#robocade-photo-2" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">RoboCade<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 2 -->
+        <div id="robocade-photo-2" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#robocade-photo-1" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/robo_02.jpg" alt="RoboCade experience">
+                <a href="#robocade-photo-3" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">RoboCade<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 3 -->
+        <div id="robocade-photo-3" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#robocade-photo-2" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/robo_03.jpg" alt="RoboCade experience">
+                <a href="#robocade-photo-1" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">RoboCade<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- food bank photo gallery -->
+
+        <!-- photo 1 -->
+        <div id="foodbank-photo-1" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-12" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_01.jpg" alt="Food bank internship">
+                <a href="#foodbank-photo-2" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Internship at Bartow Food Bank<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 2 -->
+        <div id="foodbank-photo-2" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-1" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_02.jpg" alt="Food bank internship">
+                <a href="#foodbank-photo-3" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Students Unloading Food Bank Truck<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 3 -->
+        <div id="foodbank-photo-3" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-2" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_03.jpg" alt="Food bank internship">
+                <a href="#foodbank-photo-4" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Students Working Together at the Food Bank<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 4 -->
+        <div id="foodbank-photo-4" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-3" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_04.jpg" alt="Food bank internship">
+                <a href="#foodbank-photo-5" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Bartow Food Bank<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 5 -->
+        <div id="foodbank-photo-5" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-4" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_05.jpg" alt="Food bank internship">
+                <a href="#foodbank-photo-6" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Students Working Together at a Food Bank<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 6 -->
+        <div id="foodbank-photo-6" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-5" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_06.jpg" alt="Food bank community event">
+                <a href="#foodbank-photo-7" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Polk Healthcare Plan Assisting Community Members<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 7 -->
+        <div id="foodbank-photo-7" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-6" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_07.jpg" alt="Food bank internship">
+                <a href="#foodbank-photo-8" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Students Working Together at a Food Bank<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 8 -->
+        <div id="foodbank-photo-8" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-7" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_08.jpg" alt="Food bank internship">
+                <a href="#foodbank-photo-9" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Students Working Together at a Food Bank<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 9 -->
+        <div id="foodbank-photo-9" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-8" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_09.jpg" alt="Food bank internship">
+                <a href="#foodbank-photo-10" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Students Working Together at a Food Bank<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 10 -->
+        <div id="foodbank-photo-10" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-9" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_10.jpg" alt="Food bank internship">
+                <a href="#foodbank-photo-11" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Students Working Together at a Food Bank<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 11 -->
+        <div id="foodbank-photo-11" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-10" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_11.jpg" alt="Food bank internship">
+                <a href="#foodbank-photo-12" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Food Bank Internship Experience<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- photo 12 -->
+        <div id="foodbank-photo-12" class="photo-overlay">
+            <a href="#internships" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#foodbank-photo-11" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/internships/foodbank_12.jpg" alt="Food bank internship">
+                <a href="#foodbank-photo-1" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Food Bank Internship Experience<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- workplace visits & field trips -->
+        <section class="home-section" id="workplace">
+            <div class="section-heading">
+                <h2>Workplace Visits &amp; Field Trips</h2>
+                <p>Workplace visits help students see how local businesses operate and learn about different jobs and career possibilities.</p>
+            </div>
+            <div class="experience-grid">
+                <!-- westgate river ranch -->
+                <article class="experience-card">
+                    <div class="experience-content">
+                        <h3>Westgate River Ranch</h3>
+                        <p>At Westgate River Ranch, students learned about hospitality and recreation while exploring a working environment outside the classroom.</p>
+                        <div class="photo-preview">
+                            <img src="images/field_trips/ft_westgate.jpg" alt="Westgate River Ranch field trip preview" loading="lazy">
+                            <img src="images/field_trips/ft_westgate_01.jpg" alt="Westgate River Ranch field trip preview" loading="lazy">
+                            <img src="images/field_trips/ft_westgate_02.jpg" alt="Westgate River Ranch field trip preview" loading="lazy">
+                            <!-- all photos here by ete staff -->
+                        </div>
+                        <a href="#westgate-photo-1" class="view-photos">View Photos</a>
+                    </div>
+                </article>
+                <!-- maxpak -->
+                <article class="experience-card">
+                    <div class="experience-content">
+                        <h3>MaxPak</h3>
+                        <p>At MaxPak, students observed how employees work together and manage different responsibilities in a professional setting.</p>
+                        <div class="photo-preview">
+                            <img src="images/field_trips/ft_maxpak.jpg" alt="MaxPak field trip preview" loading="lazy">
+                            <img src="images/field_trips/ft_maxpak_01.jpg" alt="MaxPak field trip preview" loading="lazy">
+                            <img src="images/field_trips/ft_maxpak_02.jpg" alt="MaxPak field trip preview" loading="lazy">
+                            <!-- all photos here by autumn heffner -->
+                        </div>
+                        <a href="#maxpak-photo-1" class="view-photos">View Photos</a>
+                    </div>
+                </article>
+                <!-- advance auto parts factory -->
+                <article class="experience-card">
+                    <div class="experience-content">
+                        <h3>Advance Auto Parts Factory</h3>
+                        <p>At Advance Auto Parts, students explored how employees, technology, and departments work together to keep operations running.</p>
+                        <div class="photo-preview">
+                            <img src="images/field_trips/ft_auto_01.jpg" alt="Advance Auto Parts Factory field trip preview" loading="lazy">
+                            <img src="images/field_trips/ft_auto_02.jpg" alt="Advance Auto Parts Factory field trip preview" loading="lazy">
+                            <img src="images/field_trips/ft_auto_03.jpg" alt="Advance Auto Parts Factory field trip preview" loading="lazy">
+                            <!-- all photos here by ete staff -->
+                        </div>
+                        <a href="#advance-auto-photo-1" class="view-photos">View Photos</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- westgate river ranch photo gallery -->
+        <div id="westgate-photo-1" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#westgate-photo-8" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_westgate.jpg" alt="Westgate River Ranch field trip photo 1">
+                <a href="#westgate-photo-2" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Westgate River Ranch Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <div id="westgate-photo-2" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#westgate-photo-1" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_westgate_01.jpg" alt="Westgate River Ranch field trip photo 2">
+                <a href="#westgate-photo-3" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Westgate River Ranch Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <div id="westgate-photo-3" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#westgate-photo-2" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_westgate_02.jpg" alt="Westgate River Ranch field trip photo 3">
+                <a href="#westgate-photo-4" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Westgate River Ranch Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <div id="westgate-photo-4" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#westgate-photo-3" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_westgate_03.jpg" alt="Westgate River Ranch field trip photo 4">
+                <a href="#westgate-photo-5" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Westgate River Ranch Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <div id="westgate-photo-5" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#westgate-photo-4" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_westgate_04.jpg" alt="Westgate River Ranch field trip photo 5">
+                <a href="#westgate-photo-6" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Westgate River Ranch Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <div id="westgate-photo-6" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#westgate-photo-5" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_westgate_05.jpg" alt="Westgate River Ranch field trip photo 6">
+                <a href="#westgate-photo-7" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Westgate River Ranch Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <div id="westgate-photo-7" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#westgate-photo-6" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_westgate_06.jpg" alt="Westgate River Ranch field trip photo 7">
+                <a href="#westgate-photo-8" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Westgate River Ranch Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <div id="westgate-photo-8" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#westgate-photo-7" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_westgate_07.jpg" alt="Westgate River Ranch field trip photo 8">
+                <a href="#westgate-photo-1" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Westgate River Ranch Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <!-- maxpak photo gallery -->
+        <div id="maxpak-photo-1" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#maxpak-photo-4" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_maxpak.jpg" alt="MaxPak field trip photo 1">
+                <a href="#maxpak-photo-2" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">MaxPak Field Trip<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <div id="maxpak-photo-2" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#maxpak-photo-1" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_maxpak_01.jpg" alt="MaxPak field trip photo 2">
+                <a href="#maxpak-photo-3" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">MaxPak Field Trip<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <div id="maxpak-photo-3" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#maxpak-photo-2" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_maxpak_02.jpg" alt="MaxPak field trip photo 3">
+                <a href="#maxpak-photo-4" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">MaxPak Field Trip<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <div id="maxpak-photo-4" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#maxpak-photo-3" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_maxpak_03.jpg" alt="MaxPak field trip photo 4">
+                <a href="#maxpak-photo-1" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">MaxPak Field Trip<span class="photo-credit">Photo by Autumn Heffner</span></p>
+            </div>
+        </div>
+
+        <!-- advance auto parts factory photo gallery -->
+        <div id="advance-auto-photo-1" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#advance-auto-photo-5" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_auto_01.jpg" alt="Advance Auto Parts Factory field trip photo 1">
+                <a href="#advance-auto-photo-2" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Advance Auto Parts Factory Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <div id="advance-auto-photo-2" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#advance-auto-photo-1" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_auto_02.jpg" alt="Advance Auto Parts Factory field trip photo 2">
+                <a href="#advance-auto-photo-3" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Advance Auto Parts Factory Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <div id="advance-auto-photo-3" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#advance-auto-photo-2" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_auto_03.jpg" alt="Advance Auto Parts Factory field trip photo 3">
+                <a href="#advance-auto-photo-4" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Advance Auto Parts Factory Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <div id="advance-auto-photo-4" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#advance-auto-photo-3" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_auto_04.jpg" alt="Advance Auto Parts Factory field trip photo 4">
+                <a href="#advance-auto-photo-5" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Advance Auto Parts Factory Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <div id="advance-auto-photo-5" class="photo-overlay">
+            <a href="#workplace" class="overlay-close" aria-label="Close gallery">&times;</a>
+            <div class="photo-container">
+                <a href="#advance-auto-photo-4" class="photo-arrow photo-prev" aria-label="Previous photo">&#10094;</a>
+                <img src="images/field_trips/ft_auto_05.jpg" alt="Advance Auto Parts Factory field trip photo 5">
+                <a href="#advance-auto-photo-1" class="photo-arrow photo-next" aria-label="Next photo">&#10095;</a>
+                <p class="photo-caption">Advance Auto Parts Factory Field Trip<span class="photo-credit">Photo by ETE Staff</span></p>
+            </div>
+        </div>
+
+        <!-- campus experiences -->
+        <section class="home-section" id="campus">
+            <div class="section-heading">
+                <h2>Campus Experiences</h2>
+                <p>Students develop useful everyday skills through campus projects, technology tasks, cleaning, and helping with events.</p>
+            </div>
+
+            <article class="staff-feature">
+                <img src="images/misc/misc_20.jpg" alt="Students gathered before lunch" class="staff-feature-image" loading="lazy">
+                <!-- photo by ete staff-->
+                <div class="staff-feature-content">
+                    <h3>Learning Beyond the Classroom</h3>
+                    <p>These hands-on experiences help students practice teamwork, responsibility, organization, and greater independence.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- back to top -->
+    <a href="#top" class="back-to-top">Back to Top &uarr;</a>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <img src="images/psc_logo.png" alt="Polk State College Logo" class="footer-logo">
+        <div class="footer-text">
+            <p class="footer-title">Empower to Employ</p>
+            <p>Polk State College</p>
+            <p>This is a fictitious business website created for learning purposes only.</p>
+            <p>&copy; 2026 Polk State College Empower to Employ. All rights reserved.</p>
+        </div>
+        <img src="images/ete_favi_logo.png" alt="Empower to Employ Shield" class="footer-logo">
+    </footer>
+    <script src="project-filter.js" defer></script>
+</body>
+</html>
