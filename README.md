@@ -1,5 +1,5 @@
 # Empower to Employ | Responsive Website
-A responsive website showcasing Polk State College's Empower to Employ (ETE) program, developed as part of my CGS2820 Web Development course.
+A responsive website showcasing Polk State College's Empower to Employ (ETE) program, developed as part of my Web Development course.
 
 ## Project Overview
 This project was created to provide an accessible, informative, and easy-to-navigate website highlighting the ETE program, student experiences, community partnerships, and future career opportunities.
